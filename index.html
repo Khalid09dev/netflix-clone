@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
+    <!-- daisi ui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+
     <!-- tailwind cdn link  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -49,10 +52,120 @@
         </div>
     </header>
     <main class="bg-[#000]">
-        <!-- <h1>hello</h1>
-        <h1>hello</h1>
-        <h1>hello</h1>
-        <h1>hello</h1> -->
+        <section class="flex justify-center items-center gap-6 pt-9">
+            <div class="pt-10">
+                <h2 class="text-white text-[40px] font-bold">Enjoy on your TV</h2>
+                <p class="text-white text-base font-normal">Watch on Smart TVs, Playstation, Xbox, Chromecast, <br>
+                Apple TV, Blu-ray players, and more.</p>
+            </div>
+            <div class="pt-7">
+                <div class="relative">
+                    <video controls muted autoplay>
+                        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+                    </video>
+                    <img class="absolute top-0 left-0 z-auto border-[1px] border-[#000]" src="./images/tv.png" alt="#">
+                </div>
+            </div>
+        </section>
+        <hr class="bg-slate-400 p-[2px] mb-20 mt-40">
+        <section class="flex justify-center items-center relative">
+            <div>
+                <img src="./images/mobile.png" alt="#">
+                <div class="flex justify-center items-center">
+                    <img src="./images/boxshot.png" alt="#">
+                    <span class="pl-4 pr-16">
+                        <p class="text-white text-base font-medium">Stranger Thing</p>
+                        <p class="text-sm font-normal text-[#0071EB]">Downlaoding...</p>
+                    </span>
+                    <span><img src="./images/download.gif" alt="#"></span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-white text-[40px] font-bold">Download your shows to
+                <br>    watch offline</h2>
+                <p class="text-white text-base font-normal">Watch on a plane, train, or submarine...</p>
+            </div>
+        </section>
+        <hr class="bg-slate-400 p-[2px] mb-20 mt-40">
+        <section class="flex justify-center gap-6 items-center">
+            <div>
+                <h2 class="text-white text-[40px] font-bold">Create profiles for kids</h2>
+                <p class="text-white text-base font-normal">Send kids on adventures with their favorite characters <br>
+                    in a space made just for them—free with your <br>
+                    membership.</p>
+            </div>
+            <img src="./images/kids.png" alt="#">
+        </section>
+        <hr class="bg-slate-400 p-[2px] mb-20 mt-40">
+        <h2 class="text-center text-white text-[40px] font-bold pb-6">Frequently Asked Questions</h2>
+        <section class="flex justify-center">
+            <!-- accordion start  -->
+            <div class="w-3/5">
+                <div class="collapse collapse-plus bg-base-200 p-1 mb-2 bg-[#2D2D2D]">
+                    <input type="radio" name="my-accordion-3"  /> 
+                    <div class="collapse-title text-xl font-medium">
+                    What is Netflix
+                    </div>
+                    <div class="collapse-content"> 
+                    <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200 p-1 mb-2 bg-[#2D2D2D]">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                    How much does Netflix cost?
+                    </div>
+                    <div class="collapse-content"> 
+                    <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200 p-1 mb-2 bg-[#2D2D2D]">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                    Where can I watch?
+                    </div>
+                    <div class="collapse-content"> 
+                    <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200 p-1 mb-2 bg-[#2D2D2D]">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                    How do I cancel?
+                    </div>
+                    <div class="collapse-content"> 
+                    <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200 p-1 mb-2 bg-[#2D2D2D]">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                    What can I watch on Netflix?
+                    </div>
+                    <div class="collapse-content"> 
+                    <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200 p-1 mb-2 bg-[#2D2D2D]">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                    Is Netflix good for kids?
+                    </div>
+                    <div class="collapse-content"> 
+                    <p>hello</p>
+                    </div>
+                </div>
+            </div>
+            <!-- accordion end  -->
+        </section>
+        <p class="text-white text-center text-base font-normal pt-4 pb-4">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="flex justify-center items-center gap-2">
+            <input class="pr-48 pl-4 py-3 rounded-md bg-[#161616]" type="text" placeholder="Email address">
+            <div class="flex bg-[#E50914] px-5 py-[11px] rounded-[3px]">
+                <button class="text-white text-base font-medium">Get Started</button>
+                <img src="./images/right-arrow.png" alt="#">
+            </div>
+        </div>
     </main>
     <footer>
 
